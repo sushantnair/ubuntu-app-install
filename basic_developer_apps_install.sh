@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # Define color codes
+RED='\033[1;31m'
 GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[1;34m'
-NC='\033[0m' # No Color - used to reset
+NC='\033[0m' # IMPORTANT TO INCLUDE AT THE END OF AN ECHO STATEMENT
 
 echo -e "${YELLOW}Setting up development environment for Ubuntu 24.04, Part 2${NC}"
 
@@ -92,6 +93,7 @@ echo -e "${BLUE}9.6. Install pgAdmin 4 desktop version${NC}"
 sudo apt install -y pgadmin4-desktop
 
 # 9.7. Manual Configuration
+echo -e "${RED}Please save all the text below from here onwards in Gnote so you can follow the instructions even after the terminal is closed.${NC}"
 echo -e "${BLUE}9.7. Manual Configuration of PostgreSQL and pgAdmin 4${NC}"
 echo "Run the following:"
 echo "Verify PostgreSQL installation and status"
@@ -107,7 +109,7 @@ echo "sudo systemctl restart postgresql"
 echo "Now open pgAdmin 4 and create a new Server"
 echo "Set localhost as the host"
 echo "Provide password as set above"
-echo "Now you are ready to create database tables and use PostgreSQL with pgAdmin 4"
+echo "Now you are ready to create databases with tables and use PostgreSQL with pgAdmin 4"
 
 
 # Next Steps
@@ -127,15 +129,18 @@ echo "5. Gnote"
 echo "6. VS Code"
 echo "7. Postman"
 echo "8. GitHub Desktop"
-echo "9. PostgreSQL with pgAdmin 4"
-echo "For VS Code, the following extensions need to be installed manually: "
+echo -e "9. PostgreSQL with pgAdmin 4${NC}"
+echo -e "${YELLOW}For VS Code, the following extensions need to be installed manually: "
 echo "6.1. Python"
 echo "6.2. Jupyter"
 echo "6.3. ESLint"
-echo "Also, in VS Code, disable auto inline ai suggestions and also enable autosave of code."
+echo "6.4. Other extensions you may need"
+echo "Also, in VS Code, disable auto inline AI suggestions and also enable autosave of code."
 echo "ALso, ensure that WinTile extension is installed from the Extension Manager"
 echo "And finally, run this command: gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'"
 echo "It will enable a window to be minimized by clicking on the icon in the dock, like in Windows"
-echo -e "Ensure that you find these applications. Hari Om.${NC}"
+echo "Debugging tip for pg Admin 4: If it is unable to connect, run sudo systemctl start postgresql"
+echo -e "Debugging tip for Virtual Box: If you are unable to find the Extension Pack in Tools, logout and login again${NC}"
+echo -e "${GREEN}It is hoped that you find these applications. Good luck!${NC}"
 
 
