@@ -20,8 +20,17 @@ This repository is a set of BASH scripts to ease the process of setting up your 
 3. Finally, run ```./<file_name>/sh```
 4. Check the Terminal Output to know about the progress and/or next steps needed to be taken
 
+# Notes
+1. The BASH scripts have been tested for Ubuntu 24.04 LTS
+2. Some commands (like the ```snap``` commands to install VS Code) **do not** work for other Linux distros.
+3. While installing Ubuntu 24.04 and later, it is recommended to go for the installation option that includes default apps like Libre Office, etc.
+
 # Contributions
 You are welcome to submit PR for adding a new BASH script suited for a particular developer role or for improving an existing BASH script. You are requested to follow the manner in which ```echo``` statements are written. This goes a long way to improve readability and reduce the monotonousness of line after line of white text, as well as to identify errors if any.
+
+# Credits
+We express our gratitude to the following sources:
+1. [How to Install VirtualBox on Ubuntu 24.04](https://www.linuxtechi.com/how-to-install-virtualbox-in-ubuntu/)
 
 # Support
 Like this project? You can express your gratitude by starring this repository and/or following the contributors
