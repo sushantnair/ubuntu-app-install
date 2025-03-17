@@ -11,7 +11,7 @@ echo -e "${YELLOW}Setting up development environment for Ubuntu 24.04, Part 2${N
 # 1.5. Install VirtualBox Extension Pack
 echo -e "${YELLOW}1.5. Installing VirtualBox Extension Pack...${NC}"
 wget https://download.virtualbox.org/virtualbox/7.0.18/Oracle_VM_VirtualBox_Extension_Pack-7.0.18.vbox-extpack
-sudo vboxmanage extpack install -y Oracle_VM_VirtualBox_Extension_Pack-7.0.18.vbox-extpack
+sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.18.vbox-extpack
 
 
 
