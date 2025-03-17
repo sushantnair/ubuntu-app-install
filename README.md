@@ -14,6 +14,12 @@ This repository is a set of BASH scripts to ease the process of setting up your 
    8. PostgreSQL with pg Admin4
 3. More upcoming
 
+# Running Instructions
+1. First, download the BASH script to the **home** directory.
+2. Next, open Terminal using ```Ctrl+Alt+T``` and execute ```sudo chmod +x <file_name>.sh```
+3. Finally, run ```./<file_name>/sh```
+4. Check the Terminal Output to know about the progress and/or next steps needed to be taken
+
 # Contributions
 You are welcome to submit PR for adding a new BASH script suited for a particular developer role or for improving an existing BASH script. You are requested to follow the manner in which ```echo``` statements are written. This goes a long way to improve readability and reduce the monotonousness of line after line of white text, as well as to identify errors if any.
 
